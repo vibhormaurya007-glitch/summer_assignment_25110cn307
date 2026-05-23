@@ -1,2 +1,2 @@
 # summer_assignment_25110cn307
-This a summer project  repo
+This is summer project  repo
