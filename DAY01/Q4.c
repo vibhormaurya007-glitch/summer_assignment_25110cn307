@@ -11,14 +11,14 @@ int main()
     {
         count = 1;
     }
-        else
+    else
+    {
+        while (n > 0)
         {
-            while (n > 0)
-            {
-                n = n / 10;
-                count++;
-            }
+            n = n / 10;
+            count++;
         }
-        printf("total number of digits:%d", count);
-        return 0;
     }
+    printf("total number of digits:%d", count);
+    return 0;
+}
