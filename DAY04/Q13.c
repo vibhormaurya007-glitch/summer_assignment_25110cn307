@@ -14,10 +14,10 @@ int main()
     for (int i = 1; i <= n; i++)
     {
 
+        printf("%d ", a);
         c = a + b;
         a = b;
         b = c;
-        printf("%d ", c);
     }
 
     return 0;
