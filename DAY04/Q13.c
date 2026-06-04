@@ -4,27 +4,20 @@
 
 int main()
 {
-    int  n,c;
+    int n, c;
     int a = 0;
     int b = 1;
     printf("enter number upto you want fibonacci series:");
     scanf("%d", &n);
     printf("Fibonacci series upto %dth term:", n);
-    if(n==1){
-        printf("0");
-    }
-    else if(n==2){
-        printf("1");
-    }
-    else{
-    for (int i = 3; i <= n; i++)
+
+    for (int i = 1; i <= n; i++)
     {
 
         c = a + b;
         a = b;
         b = c;
-        printf("%d", c);
-    }
+        printf("%d ", c);
     }
 
     return 0;
