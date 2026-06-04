@@ -4,7 +4,7 @@
 
 int main()
 {
-    int sum = 0, n,c;
+    int  n,c;
     int a = 0;
     int b = 1;
     printf("enter number upto you want fibonacci series:");
