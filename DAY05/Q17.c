@@ -1,39 +1,41 @@
-// Write a program to Check strong number.
-/*A Strong Number (also called a Krishnamurthy number or Factorion) is a number where the sum of the
-factorials of its individual digits equals the original number itself*/
+// Write a program to Check perfect number.
+/* perfect number = A perfect number is a positive integer that equals the sum of its
+  proper positive divisors (excluding the number itself).*/
 
 #include <stdio.h>
-
 int main()
 {
     int n;
     printf("enter number:");
     scanf("%d", &n);
     int original = n;
-
-    int sum = 0;
-    while (n > 0)
+    printf("factors of %d:", n);
+    for (int i = 1; i <= n; i++)
     {
-        int factorial = 1;
-        int digit;
-        digit = n % 10;
-        for (int i = 1; i <= digit; i++)
+        if (n % i == 0)
         {
-            factorial = factorial * i;
+            printf("%d ", i);
         }
-        sum = sum+factorial;
-
-        n = n / 10;
     }
-    printf("sum of factorial of digits is:%d\n", sum);
+    original = n;
+    int sum = 0;
+    for (int i = 1; i < n; i++)
+    {
+        if (original % i == 0)
+        {
+            sum = sum + i;
+        }
+    }
+    printf("\n");
+    printf("sum of factors excluding number itself = %d\n", sum);
+
     if (sum == original)
     {
-        printf("strong number");
-    }
-    else
-    {
-        printf("not strong number");
+        printf("perfect number");
     }
 
-    return 0;
+    else
+    {
+        printf("not perfect number");
+    }
 }

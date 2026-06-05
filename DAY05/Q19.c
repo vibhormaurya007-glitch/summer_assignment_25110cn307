@@ -1,24 +1,17 @@
-// Write a program to Find largest prime factor.
+// Write a program to Print factors of a number.
 #include <stdio.h>
 
 int main()
 {
-    int n, largest = 0;
-
-    printf("Enter number: ");
+    int n;
+    printf("enter number:");
     scanf("%d", &n);
-
-    for (int i = 2; i <= n; i++)
+    printf("factor of %d is:", n);
+    for (int i = 1; i <= n; i++)
     {
-
-        while (n % i == 0)
-        {
-            largest = i;
-            n /= i;
+        if(n%i==0){
+            printf("%d ",i);
         }
     }
-
-    printf("Largest Prime Factor = %d", largest);
-
     return 0;
 }
