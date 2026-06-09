@@ -11,9 +11,9 @@ int main()
 {
     for (int i = 1; i <= 5; i++)
     {
-        for (char j = 'A'; j <= 'A' + i - 1; j++)
+        for (int j = 0; j < i; j++)
         {
-            cout << j;
+            cout <<char('A'+j);
         }
         cout << endl;
     }
