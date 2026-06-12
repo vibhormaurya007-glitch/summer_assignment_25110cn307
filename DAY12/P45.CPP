@@ -7,7 +7,7 @@ int palindrome(int x)
     while (x > 0)
     {
         int temp = x % 10;
-         rev = rev * 10 + temp;
+        rev = rev * 10 + temp;
         x = x / 10;
     }
     return rev;
