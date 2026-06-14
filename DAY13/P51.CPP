@@ -19,9 +19,8 @@ int main()
     {
         if (arr[i] > max)
         {
-            int temp = max;
             max = arr[i];
-            arr[i] = temp;
+        
         }
     }
     cout << "largest:" << max<<endl;
@@ -30,9 +29,7 @@ int main()
     {
         if (arr[i] < smallest)
         {
-            int temp = smallest;
             smallest = arr[i];
-            arr[i] = temp;
         }
     }
     cout << "smallest:" << smallest;
